@@ -78,6 +78,8 @@ export default class Dashboard extends Component {
             <HeaderRow>
                 <Navigation >
                     <a href="/home"style={{fontSize:'20px'}} >Home</a>
+                    <a href="/BikeBooking" style={{fontSize:'20px'}}>BikeBooking</a>
+                    <a href="/CarBooking" style={{fontSize:'20px'}}>CarBooking</a>
                     <a href="/profile" style={{fontSize:'20px'}}>Profile</a>
                     <a href="/contact" style={{fontSize:'20px'}}>Contact Us</a>
                     
@@ -112,6 +114,14 @@ export default class Dashboard extends Component {
                 </div>
             </Carousel>
             </div>
+
+   
+            <div>
+                    <img src={THREE} />
+                </div>
+
+                
+
 
    
 

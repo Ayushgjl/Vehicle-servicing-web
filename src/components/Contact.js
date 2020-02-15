@@ -45,10 +45,10 @@ export class Contact extends Component {
                 </Navigation>
             </HeaderRow>
         </Header>
-        <Drawer title="Pizza Delivery ">
+        <Drawer title="Vrhicle Servicing ">
             <Navigation>
                 <a href="/home">Home</a>
-                <a href="/mycart">My Cart</a>
+                
                 <a href="/profile">Profile</a>
                 <a href="/contact">Contact Us</a>
                 

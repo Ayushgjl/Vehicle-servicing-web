@@ -8,7 +8,8 @@ import Profile from './components/Profile';
 import PrivateRoute from './components/PrivateRoute';
 import{BrowserRouter as Router,Route} from 'react-router-dom';
 import  Contact  from './components/Contact';
-
+import BikeBooking from './components/BikeBooking';
+import CarBooking from './components/CarBooking';
 
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
       <Route exact path='/' component={Login}/>
       <Route path='/register' component={Signup}/>
       <PrivateRoute path='/home' component={Home}/>
-
+      <PrivateRoute path='/BikeBooking' component={BikeBooking}/>
+      <PrivateRoute path='/CarBooking' component={CarBooking}/>
       <PrivateRoute path='/profile' component={Profile}/>
       <PrivateRoute path='/contact' component={Contact}/>
     
