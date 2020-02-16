@@ -34,7 +34,7 @@ export default class Signup extends Component {
             this.setState({
              firstName: '',
              lastName: '',
-             PhoneNumber: '',
+             phonenumber: '',
              username: '',
              password: '',
              isRegistered:true
@@ -65,8 +65,8 @@ export default class Signup extends Component {
                     </FormGroup>
 
                     <FormGroup align="left">
-                        <label for='PhoneNumber'>Phone Number</label>
-                        <Input type="text" name='PhoneNumber' placeholder="Enter Lastname" id="PhoneNumber" value={this.state.PhoneNumber}
+                        <label for='phonenumber'>Phone Number</label>
+                        <Input type="text" name='phonenumber' placeholder="Enter Lastname" id="phonenumber" value={this.state.phonenumber}
                         onChange={this.handleChange}/>
                     </FormGroup>
 

@@ -25,7 +25,7 @@ export class Contact extends Component {
             <div className="demo-big-content"  >
     <Layout>
         <Header waterfall style={{ background:"#FF5722",fontFamily:'Bold',fontSize:'20px'}}>
-            <HeaderRow title="Furniture Hub" >
+            <HeaderRow title="Vehicle Servicing" >
                 <Textfield 
                     value=""
                     onChange={() => {}}
@@ -45,7 +45,7 @@ export class Contact extends Component {
                 </Navigation>
             </HeaderRow>
         </Header>
-        <Drawer title="Vrhicle Servicing ">
+        <Drawer title="Vehicle Servicing ">
             <Navigation>
                 <a href="/home">Home</a>
                 

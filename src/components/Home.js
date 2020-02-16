@@ -2,14 +2,17 @@ import React, { Component } from 'react'
 import {Button,Card,CardText,CardActions,CardTitle, Layout,Header,Textfield, HeaderRow,Drawer,Navigation,Content,
      Grid, Cell, Dialog,DialogTitle,DialogActions,Footer,FooterSection,FooterLinkList} from 'react-mdl';
 import SimpleImageSlider from 'react-simple-image-slider';
+import{Link, Redirect} from 'react-router-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import ONE from '../components/images/ONE.jpg';
 import TWO from '../components/images/TWO.jpg';
+import bikeservice from '../components/images/bikeservice.jpg';
 import THREE from '../components/images/THREE.jpg';
 import FOUR from '../components/images/FOUR.jpg';
+import FIVE from '../components/images/FIVE.jpg';
 import axios from 'axios';
-import { Container, Row, Col }from 'reactstrap';
+import { Container, Row, Col, Form, FormText }from 'reactstrap';
 
 export default class Dashboard extends Component {
     
@@ -115,10 +118,24 @@ export default class Dashboard extends Component {
             </Carousel>
             </div>
 
-   
-            <div>
-                    <img src={THREE} />
+
+
+                <div>
+                    <img src={bikeservice} />
                 </div>
+                <Form>
+                <FormText>Not Book servicing of your Bike?<Link to='/BikeBooking'>Book here</Link></FormText>
+                </Form>
+
+                <div>
+                    <img src={FIVE} />
+                </div>
+                <Form>
+                <FormText>Not Book servicing of your car?<Link to='/CarBooking'>Book here</Link></FormText>
+                </Form>
+
+
+               
 
                 
 

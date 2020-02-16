@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Button,Form,FormGroup,label,Input,FormText} from 'reactstrap';
+import { Layout,Header,Textfield, HeaderRow,Drawer,Navigation,Content, Grid, Cell,Footer,FooterSection,FooterLinkList} from 'react-mdl';
 import'./Main.css';
 import axios from 'axios';
 import { Link , Redirect} from 'react-router-dom';
@@ -51,12 +52,12 @@ isBooked=(event) =>{
     
 }
 
- 
-
 
 
 render() {
     return (
+
+    
         <div className="box">
         <h1>Booking</h1>
         <Form >
@@ -119,9 +120,28 @@ render() {
 
                 <Button className="btn-primary" onClick={this.isBooked}>Book Now</Button>
                  
+
+                   
             </Form>
 
-        </div>
+            <br></br>
+
+            <Footer size="mini">
+    <FooterSection type="left" logo="Title">
+        <FooterLinkList>
+            <a href="#">Help</a>
+            <a href="#">Privacy & Terms</a>
+        </FooterLinkList>
+    </FooterSection>
+</Footer>   
+        
+     
+       
+       </div>
+      
+    
+        
     )
 }
 }
+
